@@ -7,9 +7,11 @@ $sortedUppercasedCountryCodes = $countryCodes->sorted()->uppercased()->getCodes(
 $rules = ['B' => 'Bish', 'N' => 'Nish'];
 $bishNish = new \BishNish\BishNish($sortedUppercasedCountryCodes, $rules);
 
-// Print the BishNish array
+echo PHP_EOL;
+echo 'Printing BishNish on country codes:' . PHP_EOL;
+
 foreach ($bishNish->generate() as $item) {
-    echo $item . "\n";
+    echo $item . PHP_EOL;
 }
 
 
