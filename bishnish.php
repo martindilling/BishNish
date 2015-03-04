@@ -1,6 +1,6 @@
 <?php
 
-require_once('vendor/autoload.php');
+require_once('autoload.php');
 
 $countryCodes = new \BishNish\CountryCodes(__DIR__ . '/src/country_codes.php');
 $sortedUppercasedCountryCodes = $countryCodes->sorted()->uppercased()->getCodes();
